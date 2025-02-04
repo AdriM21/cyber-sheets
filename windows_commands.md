@@ -6,32 +6,19 @@ A list of useful Windows commands for cmd and powershell
 
 #### Basics
 
-Displays current directory
-
 ```
-cd
+cd *args*
 ```
 
-Set current directory as path K
+* args:
+	* *none*: displays current directory path
+	* /p/: follows path *p* and sets a new current directory
 
 ```
-cd K
+dir *args*
 ```
 
-Lists content of current directory
-
-```
-dir
-```
-
-Lists content and hidden content of current directory
-
-```
-dir /a
-```
-
-Lists content of current and sub-directories
-
-```
-dir /s
-```
+* args:
+	* *none*: lists content of current directory
+	* /a: lists content and hidden content of current directory
+	* /s: lists content of current and sub-directories
