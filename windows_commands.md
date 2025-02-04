@@ -1,15 +1,19 @@
 # Windows Commands
 
+A list of useful Windows commands for cmd and powershell
+
 ## cmd
 
 #### Basics
 
-```bash
-# Displays current directory
-cd
+Displays current directory
+
+```
+> cd
 ```
 
-```bash
-# Follow path K
-cd K
+Follow path K
+
+```
+> cd K
 ```
