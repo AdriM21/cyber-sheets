@@ -18,4 +18,4 @@ A list of personnal cheatsheets builded along my journey in cyber
 
 ## Global Organization
 
-* [**Windows Commands**](windows_commands.md): A list of useful Windows commands for cmd and powershell
+* [**Windows Commands**](windows_commands.md): A list of useful Windows commands for cmd, powershell and AD

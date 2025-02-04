@@ -1,6 +1,6 @@
 # Windows Commands
 
-A list of useful Windows commands for cmd and powershell
+A list of useful Windows commands for cmd, powershell and AD
 
 ## cmd
 
@@ -86,3 +86,166 @@ erase *args*
 
 * args:
 	* X: erases the file called "X"
+
+```
+find *args*
+```
+
+* args:
+	* X: finds string "X"
+
+```
+cls *args*
+```
+
+* args:
+	* *none*: clears display
+
+```
+help *args*
+```
+
+* args:
+	* *none*: displays help menu
+
+```
+shutdown *args*
+```
+
+* args:
+	* /s: shutdowns the current device
+	* /r: reboot the current device
+	* /a: cancel the shutdown of the current device
+
+#### Pipeline
+
+```
+*command_1* | *command_2*
+```
+
+* Executes command_1 and pass its output to execute command_2
+
+```
+*command_1* | more
+```
+
+* Executes command_1 and displays its output on several window pages
+
+#### Processes
+
+```
+tasklist *args*
+```
+
+* args:
+	* *none*: displays process list
+	* /FI "imagename eq sshd.exe": displays process related to sshd.exe
+
+```
+taskkill *args*
+```
+
+* args:
+	* /PID X: kills process with PID "X"
+
+#### Information
+
+```
+set *args*
+```
+
+* args:
+	* *none*: displays current configuration
+
+```
+ver *args*
+```
+
+* args:
+	* *none*: displays OS version
+
+```
+systeminfo *args*
+```
+
+* args:
+	* *none*: displays system info
+
+#### Network
+
+```
+ipconfig *args*
+```
+
+* args:
+	* *none*: displays current network configuration
+	* /all: displays all current network configuration
+
+```
+ping *args*
+```
+
+* args:
+	* X: pings server at IP address "X"
+
+```
+tracert *args*
+```
+
+* args:
+	* X: traces route to server at IP address "X"
+
+```
+nslookup *args*
+```
+
+* args:
+	* X: DNS lookup for server at IP address "X"
+
+```
+netstat *args*
+```
+
+* args:
+	* *none*: displays current network connections
+	* -abon: displays detailed current network connections
+
+#### Disk and drivers
+
+```
+chkdsk *args*
+```
+
+* args:
+	* *none*: checks the file system and disk volumes for errors and bad sectors
+
+```
+driverquery *args*
+```
+
+* args:
+	* *none*: displays a list of installed device drivers
+
+```
+sfc *args*
+```
+
+* args:
+	* /scannow: scans system files for corruption and repairs them if possible
+
+#### Execution
+
+```
+powershell *args*
+```
+
+* args:
+	* *none*: launchs a powershell session
+	* -ep bypass -c ". .\x; x": executes command "x" in a powershell session
+
+```
+runas.exe *args*
+```
+
+* args:
+	* /user:X Y: executes command "Y" with user "X" privileges
