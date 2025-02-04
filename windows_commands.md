@@ -9,11 +9,11 @@ A list of useful Windows commands for cmd and powershell
 Displays current directory
 
 ```
-> cd
+cd
 ```
 
 Follow path K
 
 ```
-> cd K
+cd K
 ```
