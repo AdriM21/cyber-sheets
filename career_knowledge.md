@@ -187,3 +187,85 @@ A melting-pot of theory useful for several career-paths
         * Perform a full review of the impacted systems to return to business as usual operations.
     * Lessons
         * Learned What can be learnt from the incident? I.e. if it was due to a phishing email, employees should be trained better to detect phishing emails.
+
+## Confidentiality
+
+* Something you know: Passwords or passphrases
+* Something you have: Tokens, memory cards, smart cards
+* Something you are: Biometrics, measurable characteristics
+
+## Risk Management Terminology
+
+* An asset: is something in need of protection.
+* A vulnerability: is a gap or weakness in those protection efforts.
+* A threat: is something or someone that aims to exploit a vulnerability to thwart protection efforts.
+
+* Who is responsible for determining risk tolerance in an organization?
+    * Executive management and board of directors
+
+## Governance Elements
+
+* Procedures are the detailed steps to complete a task that support departmental or organizational policies.
+* Policies are put in place by organizationalgovernance, such as executive management, to provide guidance in all activities to ensure that the organization supports industry standards and regulations.
+* Standards are often used by governance teams to provide a framework to introduce policies and procedures in support of regulations.
+* Regulations are commonly issued in the form of laws, usually from government (not to be confused with governance) and typically carry financial penalties for non-compliance.
+
+## Risk Treatment
+
+* Risk avoidance is the attempt to eliminate the risk entirely. This could include ceasing operation for some or all of the activities of the organization that leave it exposed to a particular risk. Leadership may choose risk avoidance if the potential impact of a given risk is too high or if the likelihood of the risk being realized is simply too great.
+* Risk acceptance is taking no action to reduce the likelihood of a risk occurring. Management may opt to conduct the business function associated with the risk without any further action on the part of the organization, either because the impact or likelihood of occurrence is negligible or because the benefit is more than enough to offset that risk.
+* Risk mitigation is the most common type of risk management and includes taking actions to prevent or reduce the possibility of a risk event or its impact. Mitigation can involve remediation measures such as security controls, policies, procedures, and standards to minimize adverse risk. Risk cannot always be mitigated, but mitigations such as safety measures should always be in place.
+* Risk transference is the practice of passing the risk to another party who will accept the financial impact of the harm resulting from a risk being realized in exchange for payment. Typically, this is an insurance policy.
+
+## Security Controls
+
+* Physical controls address security needs using physical hardware devices, such as badge readers, architectural features of buildings and facilities, and specific security actions taken by staff.
+* Technical controls (also called logical controls) are security controls that computer systems and networks directly implement.
+* Administrative controls (also known as managerial controls) are directives, guidelines, or advisories aimed at the people within the organization. They provide frameworks, constraints, and standards for human behavior and should cover the entire scope of the organization’s activities and its interactions with external parties and stakeholders.
+
+## Incident Terminology
+
+* Breach: The loss of control, compromise, unauthorized disclosure, unauthorized acquisition, or any similar occurrence where: a person other than an authorized user accesses or potentially accesses personally identifiable information; or an authorized user accesses personally identifiable information for other than an authorized purpose.
+* Event: Any observable occurrence in a network or system.
+* Exploit: A particular attack. It is named this way because these attacks exploit system vulnerabilities.
+* Incident: An event that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system or the information the system processes, stores, or transmits.
+* Intrusion: A security event, or combination of events, that constitutes a deliberate security incident in which an intruder gains, or attempts to gain, access to a system or system resource without authorization.
+* Threat: Any circumstance or event with the potential to adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, or the nation through an information system via unauthorized access, destruction, disclosure, modification of information, and/or denial of service. 
+* Vulnerability: Weakness in an information system, system security procedures, internal controls, or implementation that could be exploited by a threat source.
+* Zero Day: A previously unknown system vulnerability with the potential of exploitation without risk of detection or prevention because it does not, in general, fit recognized patterns, signatures, or methods.
+
+## Components of the Incident Response Plan
+
+* Preparation:
+    * Develop a policy approved by management.
+    * Identify critical data and systems and any single points of failure.
+    * Train staff on incident response.
+    * Implement an incident response team.
+    * Practice Incident Identification (first response).
+    * Identify roles and responsibilities.
+    * Plan the coordination of communication between stakeholders.
+    * Consider the possibility that a primary method of communication may not be available.
+* Detection and Analysis:
+    * Monitor all possible attack vectors.
+    * Analyze the incident using known data and threat intelligence.
+    * Prioritize incident response.
+    * Standardize incident documentation.
+* Containment
+    * Gather evidence.
+    * Choose an appropriate containment strategy.
+    * Identify the attacker.
+    * Isolate the attack.
+* Post-Incident Activity
+    * Identify evidence that may need to be retained.
+    * Document lessons learned.
+
+## Components of a Disaster Recovery Plan
+
+* Executive summary providing a high-level overview of the plan
+* Department-specific plans
+* Technical guides for IT personnel responsible for implementing and maintaining critical backup systems
+* Full copies of the plan for critical disaster recovery team members
+* Checklists for certain individuals:
+    * Critical disaster recovery team members will have checklists to help guide their actions amid the chaotic atmosphere of a disaste.
+    * IT personnel will have technical guides helping them get the alternate sites up and running.
+    * Managers and public relations personnel will have simple-to-follow, high-level documents to help them communicate the issue accurately without requiring imput from team members who are busy working on the recovery.
