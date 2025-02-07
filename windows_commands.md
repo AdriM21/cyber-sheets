@@ -249,3 +249,210 @@ runas.exe *args*
 
 * args:
 	* /user:X Y: executes command "Y" with user "X" privileges
+
+## powershell
+
+#### Basics
+
+```
+Set-Location *args*
+```
+
+```
+cd *args*
+```
+
+* args:
+	* /p/: follows path *p* and sets a new current directory
+
+```
+Get-ChildItem *args*
+```
+
+```
+DIR *args*
+```
+
+* args:
+	* *none*: lists content of current directory
+	* -Path "X": lists content of directory after path "X"
+
+```
+New-Item *args*
+```
+
+* args:
+	* -Path "X": location of the new item
+	* -ItemType "Y": creates a new item of type "Y"
+
+```
+Remove-Item *args*
+```
+
+* args:
+	* -Path "X": location of the deleted item
+
+```
+Copy-Item *args*
+```
+
+* args:
+	* -Path "X": location of the initial item
+	* -Destination "Y": location of the copied item
+
+```
+Move-Item *args*
+```
+
+* args:
+	* -Path "X": location of the initial item
+	* -Destination "Y": location of the copied item
+
+```
+Get-Content *args*
+```
+
+* args:
+	* -Path "X": location of the item to display its content
+
+```
+Select-String *args*
+```
+
+* args:
+	* -Path "X": location of the item
+	* -Pattern "X": find strign "X" in the item
+
+```
+Get-Command *args*
+```
+
+* args:
+	* -CommandType "X": lists available commands of type "X"
+	* -Name "X*": lists available commands that begins with "X"
+
+```
+Get-Help *args*
+```
+
+* args:
+	* "X": gets help for command "X"
+
+```
+Get-Alias
+```
+
+* Lists all available aliases
+
+```
+Find-Module *args*
+```
+
+* args:
+	* -Name "X": finds if a module called "X" exists on the net
+
+```
+Install-Module *args*
+```
+
+* args:
+	* -Name "X": installs a module called "X" from the net
+
+```
+Clear
+```
+
+* Clears display
+
+#### Pipeline
+
+```
+*command_1* | *command_2*
+```
+
+* Executes command_1 and pass its output to execute command_2
+
+#### Information
+
+```
+Get-ComputerInfo
+```
+
+* Displays computer info
+
+```
+Get-LocalUser
+```
+
+* Displays local user
+
+```
+Get-NetIPConfiguration
+```
+
+* Displays IP config
+
+```
+Get-NetIPAddress
+```
+
+* Displays IP address
+
+```
+Get-Process
+```
+
+* Displays processes
+
+```
+Get-Service
+```
+
+* Displays services
+
+```
+Get-NetTCPConnection
+```
+
+* Displays TCP connections
+
+```
+Get-FileHash *args*
+```
+
+* args:
+	* -Path "X": displays the hash of the file located at "X"
+
+#### Execution
+
+```
+Invoke-Command *args*
+```
+
+* args:
+	* *description*: executes commands on remote systems
+	* -ComputerName "X": the name of the remote system
+	* -Credential "X\Y": the credentials to connect to the remote system (username\password)
+	* -ScriptBlock { X }: the command to execute
+
+## AD
+
+#### Basics
+
+```
+Set-ADAccount Password *account_name* -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
+```
+
+* Resets account_name's password in AD
+
+```
+Set-ADUser -ChangePasswordAtLogon $true -Identity *account_name* -Verbose
+```
+
+* Forces a password reset at next login of account_name
+
+```
+gpupdate /force
+```
+
+* Forces a GPO update
