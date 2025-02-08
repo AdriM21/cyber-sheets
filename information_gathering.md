@@ -2,7 +2,7 @@
 
 A set of tools to perform passive and active information gathering
 
-## Passive Information Gathering
+## Passive Info Gathering
 
 #### Scanners
 
@@ -52,7 +52,7 @@ netdiscover
 
 * [whois](https://who.is/): to query website information
 
-## Active Information Gathering
+## Active Info Gathering
 
 #### DNS
 
