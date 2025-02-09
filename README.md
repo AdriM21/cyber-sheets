@@ -5,6 +5,7 @@ A list of personnal cheatsheets builded along my journey in cyber
 ## Global Organization
 
 * [**Career Knowledge**](career_knowledge.md): A melting-pot of theory useful for several career-paths
+* [**Exploits**](exploits.md): How to exploit
 * [**Information Gathering**](information_gathering.md): A set of tools to perform passive and active information gathering
 * [**Languages**](languages.md): A series of basic commands to use common languages (JS, SQL)
 * [**Linux Commands**](linux_commands.md): A list of useful Linux commands for bash
